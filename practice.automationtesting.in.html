@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>practice.automationtesting.in</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Ingresar a My Account</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://practice.automationtesting.in/<datalist><option>http://practice.automationtesting.in/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html/body/div/div/header/div/nav/ul/li[2]/a<datalist><option>link=My Account</option><option>//a[contains(text(),'My Account')]</option><option>//li[@id='menu-item-50']/a</option><option>//a[@href='http://practice.automationtesting.in/my-account/']</option><option>//li[2]/a</option><option>css=#menu-item-50 &gt; a</option><option>/html/body/div[1]/div[1]/header/div[2]/nav/ul/li[2]/a</option><option>//*[@id="menu-item-50"]/a</option><option>//html/body/div/div/header/div/nav/ul/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='customer_login']/div/h2<datalist><option>//div[@id='customer_login']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Login</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='customer_login']/div[2]/h2<datalist><option>//div[@id='customer_login']/div[2]/h2</option><option>//div[2]/h2</option><option>css=div.u-column2.col-2 &gt; h2</option></datalist></td><td>Register</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Registro exitoso</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://practice.automationtesting.in/<datalist><option>http://practice.automationtesting.in/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>//a[contains(text(),'My Account')]</option><option>//li[@id='menu-item-50']/a</option><option>//a[@href='http://practice.automationtesting.in/my-account/']</option><option>//li[2]/a</option><option>css=#menu-item-50 &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=reg_email<datalist><option>id=reg_email</option><option>name=email</option><option>//input[@id='reg_email']</option><option>//div[@id='customer_login']/div[2]/form/p/input</option><option>//div[2]/form/p/input</option><option>css=#reg_email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=reg_email<datalist><option>id=reg_email</option><option>name=email</option><option>//input[@id='reg_email']</option><option>//div[@id='customer_login']/div[2]/form/p/input</option><option>//div[2]/form/p/input</option><option>css=#reg_email</option></datalist></td><td>pruebaregistro20@correo.com</td>
+</tr>
+<tr><td>click</td><td>id=reg_password<datalist><option>id=reg_password</option><option>//input[@id='reg_password']</option><option>//div[@id='customer_login']/div[2]/form/p[2]/input</option><option>//div[2]/form/p[2]/input</option><option>css=#reg_password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=reg_password<datalist><option>id=reg_password</option><option>//input[@id='reg_password']</option><option>//div[@id='customer_login']/div[2]/form/p[2]/input</option><option>//div[2]/form/p[2]/input</option><option>css=#reg_password</option></datalist></td><td>Prueba1+.,</td>
+</tr>
+<tr><td>click</td><td>name=register<datalist><option>name=register</option><option>//input[@name='register']</option><option>//div[@id='customer_login']/div[2]/form/p[3]/input[3]</option><option>//div[2]/form/p[3]/input[3]</option><option>css=input[name="register"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='page-36']/div/div/div/p<datalist><option>//div[@id='page-36']/div/div/div/p</option><option>//p</option><option>css=p</option></datalist></td><td>Hello pruebaregistro20 (not pruebaregistro20? Sign out)</td>
+</tr>
+<tr><td>click</td><td>link=Sign out<datalist><option>link=Sign out</option><option>//a[contains(text(),'Sign out')]</option><option>//div[@id='page-36']/div/div/div/p/a</option><option>xpath=(//a[@href='http://practice.automationtesting.in/my-account/customer-logout/'])[2]</option><option>//p/a</option><option>css=p &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='customer_login']/div/h2<datalist><option>//div[@id='customer_login']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Login</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='customer_login']/div[2]/h2<datalist><option>//div[@id='customer_login']/div[2]/h2</option><option>//div[2]/h2</option><option>css=div.u-column2.col-2 &gt; h2</option></datalist></td><td>Register</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Autenticacion Fallida</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://practice.automationtesting.in/<datalist><option>http://practice.automationtesting.in/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>//a[contains(text(),'My Account')]</option><option>//li[@id='menu-item-50']/a</option><option>//a[@href='http://practice.automationtesting.in/my-account/']</option><option>//li[2]/a</option><option>css=#menu-item-50 &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='customer_login']/div/form/p/input</option><option>//p/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='customer_login']/div/form/p/input</option><option>//p/input</option><option>css=#username</option></datalist></td><td>pruebacorreo10@correo.com</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//div[@id='customer_login']/div/form/p[2]/input</option><option>//p[2]/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//div[@id='customer_login']/div/form/p[2]/input</option><option>//p[2]/input</option><option>css=#password</option></datalist></td><td>Prueba1+.,</td>
+</tr>
+<tr><td>click</td><td>name=login<datalist><option>name=login</option><option>//input[@name='login']</option><option>//div[@id='customer_login']/div/form/p[3]/input[3]</option><option>//input[3]</option><option>css=input[name="login"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='page-36']/div/div/ul/li<datalist><option>//div[@id='page-36']/div/div/ul/li</option><option>//div/ul/li</option><option>css=ul.woocommerce-error &gt; li</option></datalist></td><td>Error: A user could not be found with this email address.</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Autenticacion Exitosa</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://practice.automationtesting.in/<datalist><option>http://practice.automationtesting.in/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>//a[contains(text(),'My Account')]</option><option>//li[@id='menu-item-50']/a</option><option>//a[@href='http://practice.automationtesting.in/my-account/']</option><option>//li[2]/a</option><option>css=#menu-item-50 &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='customer_login']/div/form/p/input</option><option>//p/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='customer_login']/div/form/p/input</option><option>//p/input</option><option>css=#username</option></datalist></td><td>pruebaregistro10@correo.com</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//div[@id='customer_login']/div/form/p[2]/input</option><option>//p[2]/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//div[@id='customer_login']/div/form/p[2]/input</option><option>//p[2]/input</option><option>css=#password</option></datalist></td><td>Prueba1+.,</td>
+</tr>
+<tr><td>click</td><td>name=login<datalist><option>name=login</option><option>//input[@name='login']</option><option>//div[@id='customer_login']/div/form/p[3]/input[3]</option><option>//input[3]</option><option>css=input[name="login"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='page-36']/div/div/div/p<datalist><option>//div[@id='page-36']/div/div/div/p</option><option>//p</option><option>css=p</option></datalist></td><td>Hello pruebaregistro10 (not pruebaregistro10? Sign out)</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='page-36']/div/div/nav/ul/li[6]/a</option><option>//a[@href='http://practice.automationtesting.in/my-account/customer-logout/']</option><option>//div/div/nav/ul/li[6]/a</option><option>css=li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='customer_login']/div/h2<datalist><option>//div[@id='customer_login']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Login</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='customer_login']/div[2]/h2<datalist><option>//div[@id='customer_login']/div[2]/h2</option><option>//div[2]/h2</option><option>css=div.u-column2.col-2 &gt; h2</option></datalist></td><td>Register</td>
+</tr>
+</tbody></table>
+</body>
+</html>
